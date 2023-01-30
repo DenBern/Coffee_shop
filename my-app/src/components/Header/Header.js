@@ -1,18 +1,18 @@
 import './Header.css';
-import coffeeBeans from '../../assets/png/coffee_beans.png'
-import coffeeBeans2 from '../../assets/png/coffee_beans_2.png'
+import coffeeBeansWhite from '../../assets/png/coffee_beans_white.png';
+import coffeeBeansWhiteFill from '../../assets/png/coffee_beans_white_fill.png';
 
 export const Header = () => {
     return (
         <div className="header_main">
             <div className="background">
                 <div className="navigation">
-                <img src={coffeeBeans} alt="coffee_beans"/>
+                <img src={coffeeBeansWhite} alt="coffee_beans_white"/>
                     <nav>
                         <ul className="items">
-                            <li className="item">Coffee house</li>
-                            <li className="item">Our coffee</li>
-                            <li className="item">For your pleasure</li>
+                            <li className="item"><a href="#">Coffee house</a></li>
+                            <li className="item"><a href="#">Our coffee</a></li>
+                            <li className="item"><a href="">For your pleasure</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -22,7 +22,7 @@ export const Header = () => {
                         <div>
                             <hr></hr>
                         </div>
-                        <img src={coffeeBeans2} alt="coffee_beans" />
+                        <img src={coffeeBeansWhiteFill} alt="coffee_beans_white_fill" />
                         <div>
                             <hr></hr>
                         </div>
