@@ -19,3 +19,7 @@ a {
   color: #ffffff;
 }
 
+button:hover {
+  cursor: pointer;
+}
+

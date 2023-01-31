@@ -1,0 +1,8 @@
+.coffee_items {
+    display: flex;
+    flex-direction: row;
+}
+
+.item_description {
+color: #000000;
+}

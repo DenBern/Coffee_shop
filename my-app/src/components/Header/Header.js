@@ -12,7 +12,7 @@ export const Header = () => {
                         <ul className="items">
                             <li className="item"><a href="#">Coffee house</a></li>
                             <li className="item"><a href="#">Our coffee</a></li>
-                            <li className="item"><a href="">For your pleasure</a></li>
+                            <li className="item"><a href="#">For your pleasure</a></li>
                         </ul>
                     </nav>
                 </div>
