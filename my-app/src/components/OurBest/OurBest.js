@@ -3,17 +3,21 @@ import './OurBest.css';
 
 export const OurBest = ({data}) => {
 
-  const elements = data.map(item => {
-    const {best, ...itemProps } = item;
-    return <CoffeeItems key={best} {...itemProps} />  
+  const elements = data.map(item => { 
+    const {id, ...itemProps } = item;
+    if (item.best) {
+      return <CoffeeItems key={id} {...itemProps} />  
+    }
   })
   return (
     <section className="our_best">
-      <h2>Our Best</h2>
-      <div className='items_wrapper'>
-        <ul className="coffee_items">
-          {elements}
-        </ul>
+      <div className="our_best_container">
+        <h2>Our Best</h2>
+        <div className='items_wrapper'>
+          <ul className="coffee_items">
+            {elements}
+          </ul>
+        </div>
       </div>
     </section>
   )

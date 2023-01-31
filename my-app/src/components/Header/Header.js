@@ -10,9 +10,9 @@ export const Header = () => {
                 <img src={coffeeBeansWhite} alt="coffee_beans_white"/>
                     <nav>
                         <ul className="items">
-                            <li className="item"><a href="#">Coffee house</a></li>
-                            <li className="item"><a href="#">Our coffee</a></li>
-                            <li className="item"><a href="#">For your pleasure</a></li>
+                            <li className="item_li"><a href="#">Coffee house</a></li>
+                            <li className="item_li"><a href="#">Our coffee</a></li>
+                            <li className="item_li"><a href="#">For your pleasure</a></li>
                         </ul>
                     </nav>
                 </div>
