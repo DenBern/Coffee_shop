@@ -23,28 +23,44 @@ class App extends Component {
         {coffee: 'Solimo Coffee Beans 2 kg', country: 'Belgium', img: solimoCoffee, price: 10.73, best: true, id:1},
         {coffee: 'Presto Coffee Beans 1 kg', country: 'Italy', img: prestoCoffee, price: 15.99, best: true, id:2},
         {coffee: 'AROMISTICO Coffee 1 kg', country: 'Italy', img: aromisticoCoffee, price: 6.99, best: true, id:3},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: '', price: 6.99, best: false, id:4},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: '', price: 6.99, best: false, id:5},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: '', price: 6.99, best: false, id:6},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: '', price: 6.99, best: false, id:7},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Kenya', img: '', price: 6.99, best: false, id:8},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Columbia', img: '', price: 6.99, best: false, id:9},
+        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:4},
+        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:5},
+        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:6},
+        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:7},
+        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Kenya', img: aromisticoCoffee, price: 6.99, best: false, id:8},
+        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Columbia', img: aromisticoCoffee, price: 6.99, best: false, id:9},
       ],
       navigation: [
-        {name: 'white', img: {whiteBeans}, color: '#000000'},
-        {name: 'black', img: {blackBeans}, color: '#FFFFFF'},
+        {name: 'white', img: {whiteBeans}, colorLink: '#000000', id: 1},
+        {name: 'black', img: {blackBeans}, colorLink: '#FFFFFF', id: 2},
       ],
       
     }
   }
 
+  whiteBeans = (name) => {
+    this.setState(({navigation}) => {
+      return {
+        navigation: navigation.filter(item => item.name === 'white')
+      }
+    })
+  }
+
+  blackBeans = (name) => {
+    this.setState(({navigation}) => {
+      return {
+        navigation: navigation.filter(item => item.name === 'black')
+      }
+    })
+  }
+
 render () {
   return (
     <div className="App">
-      <Header whiteNavigation={this.state.navigation} />
+      <Header navigation={this.navigation } />
       <AboutUs />
       <OurBest data={this.state.data} />
-      <Footer blackNavigation={this.state.navigation} />
+      <Footer navigation={this.navigation} />
     </div>
   );
 }

@@ -1,12 +1,13 @@
-export const NavigationList = ({...navigation}) => {
+export const NavigationList = ({item}) => {
+  
   return (
     <div className="navigation">
       <img src="" alt=""/>
         <nav>
             <ul className="items">
-                <li className="item_li"><a href="#">Coffee house</a></li>
-                <li className="item_li"><a href="#">Our coffee</a></li>
-                <li className="item_li"><a href="#">For your pleasure</a></li>
+                <li className="item_li"><a href="https://www.google.com/">Coffee house</a></li>
+                <li className="item_li"><a href="https://www.google.com/">Our coffee</a></li>
+                <li className="item_li"><a href="https://www.google.com/">For your pleasure</a></li>
             </ul>
         </nav>
       </div>
