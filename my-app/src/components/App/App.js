@@ -29,34 +29,14 @@ class App extends Component {
         {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:7},
         {coffee: 'AROMISTICO Coffee 1 kg', country: 'Kenya', img: aromisticoCoffee, price: 6.99, best: false, id:8},
         {coffee: 'AROMISTICO Coffee 1 kg', country: 'Columbia', img: aromisticoCoffee, price: 6.99, best: false, id:9},
-      ],
-      navigation: [
-        {name: 'white', img: {whiteBeans}, colorLink: '#000000', id: 1},
-        {name: 'black', img: {blackBeans}, colorLink: '#FFFFFF', id: 2},
-      ],
-      
+      ]
     }
-  }
-
-  whiteNav = (navigation) => {
-    this.setState({
-      navigation: navigation.map(item => item.name === 'white')
-      
-    })
-  }
-
-  blackNav = (navigation) => {
-    this.setState({
-      navigation: navigation.map(item => item.name === 'black')
-    })
   }
 
 render () {
   return (
     <div className="App">
-      <Header 
-        whiteNav={this.state.navigation}
-      />
+      <Header />
       <AboutUs />
       <OurBest 
         data={this.state.data} 
