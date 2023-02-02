@@ -1,17 +1,23 @@
-import { NavigationList } from "../NavigationList/NavigationList"
-
-export const Footer = ({navigation}) => {
-  const elements = navigation.map(item => {
-    if (item.name === 'black') {
-      return item;
-    }
-    return (
-    <NavigationList item={item} />
-    )
-  })
+import './Footer.css'
+export const Footer = ({img}) => {
   return (
     <div className="footer_wrapper">
-      {elements}
+      <div className="navigation">
+        <img src={img} alt=""/>
+        <nav>
+            <ul className="items">
+                <li className="item_li">
+                  <a href="https://www.google.com/">Coffee house</a>
+                </li>
+                <li className="item_li">
+                  <a href="https://www.google.com/">Our coffee</a>
+                </li>
+                <li className="item_li">
+                  <a href="https://www.google.com/">For your pleasure</a>
+                </li>
+            </ul>
+        </nav>
+      </div>
     </div>
   )
 }

@@ -38,29 +38,32 @@ class App extends Component {
     }
   }
 
-  whiteBeans = (name) => {
-    this.setState(({navigation}) => {
-      return {
-        navigation: navigation.filter(item => item.name === 'white')
-      }
+  whiteNav = (navigation) => {
+    this.setState({
+      navigation: navigation.map(item => item.name === 'white')
+      
     })
   }
 
-  blackBeans = (name) => {
-    this.setState(({navigation}) => {
-      return {
-        navigation: navigation.filter(item => item.name === 'black')
-      }
+  blackNav = (navigation) => {
+    this.setState({
+      navigation: navigation.map(item => item.name === 'black')
     })
   }
 
 render () {
   return (
     <div className="App">
-      <Header navigation={this.navigation } />
+      <Header 
+        whiteNav={this.state.navigation}
+      />
       <AboutUs />
-      <OurBest data={this.state.data} />
-      <Footer navigation={this.navigation} />
+      <OurBest 
+        data={this.state.data} 
+        />
+      <Footer 
+        img={blackBeans}
+      />
     </div>
   );
 }

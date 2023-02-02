@@ -4,21 +4,13 @@ import coffeeBeansWhiteFill from '../../assets/png/coffee_beans_white_fill.png';
 import './Header.css';
 
 
-export const Header = ({navigation}) => {
-
-    const elements = navigation.map(item => {
-        if (item.name === 'white') {
-          return item;
-        }
-        return (
-        <NavigationList item={item} />
-        )
-      })
-
+export const Header = (props) => {
+    console.log(props)
+    
     return (
         <div className="header_main">
             <div className="background">
-                {elements}
+                {/* {element} */}
                 <div className="desctiption_header">
                     <h1>Everything You Love About Coffee</h1>
                     <div className="coffee_lines">
