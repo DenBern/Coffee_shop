@@ -1,8 +1,12 @@
+import {getNavigation} from '../../helpers/getNavigation';
+
 import './NavigationList.css';
-export const NavigationList = (props) => {
+export const NavigationList = ({name}) => {
   return (
-    <div className="navigation">
-        <img src="" alt=""/>
+    <div className={`navigation_${name}`}>
+        <>
+          {getNavigation(name)}
+        </>
         <nav>
             <ul className="items">
                 <li className="item_li">

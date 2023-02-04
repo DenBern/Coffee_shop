@@ -3,6 +3,7 @@ import { Header } from '../Header/Header';
 import { AboutUs } from '../AboutUs/AboutUs';
 import { OurBest } from '../OurBest/OurBest';
 import { Footer } from '../Footer/Footer';
+import { data } from '../../data/data';
 
 import './App.css';
 
@@ -11,25 +12,11 @@ import solimoCoffee from '../../assets/png/solimo_coffee.png'
 import prestoCoffee from '../../assets/png/presto_coffee.png'
 import aromisticoCoffee from '../../assets/png/solimo_coffee.png'
 
-//NavigationList
-import blackBeans from '../../assets/png/coffee_beans_black.png';
-import whiteBeans from '../../assets/png/coffee_beans_white.png';
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: [
-        {coffee: 'Solimo Coffee Beans 2 kg', country: 'Belgium', img: solimoCoffee, price: 10.73, best: true, id:1},
-        {coffee: 'Presto Coffee Beans 1 kg', country: 'Italy', img: prestoCoffee, price: 15.99, best: true, id:2},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Italy', img: aromisticoCoffee, price: 6.99, best: true, id:3},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:4},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:5},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:6},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:7},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Kenya', img: aromisticoCoffee, price: 6.99, best: false, id:8},
-        {coffee: 'AROMISTICO Coffee 1 kg', country: 'Columbia', img: aromisticoCoffee, price: 6.99, best: false, id:9},
-      ]
+      data: data,
     }
   }
 
@@ -38,12 +25,8 @@ render () {
     <div className="App">
       <Header />
       <AboutUs />
-      <OurBest 
-        data={this.state.data} 
-        />
-      <Footer 
-        img={blackBeans}
-      />
+      <OurBest data={this.state.data} />
+      <Footer />
     </div>
   );
 }

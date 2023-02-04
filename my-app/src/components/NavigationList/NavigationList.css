@@ -1,9 +1,15 @@
-.navigation {
+.navigation_header {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   padding: 30px 0 0 140px;
+}
 
+.navigation_footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 30px 0 30px 0;
 }
 
 .items {
@@ -15,4 +21,9 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
+}
+
+.beans_logo {
+  width: 35px;
+  height: 35px;
 }

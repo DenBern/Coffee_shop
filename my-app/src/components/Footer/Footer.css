@@ -6,8 +6,3 @@
   display: flex;
   justify-content: center;
 }
-
-.footer_wrapper .navigation {
-  justify-content: center;
-  padding-bottom: 20px;
-}
