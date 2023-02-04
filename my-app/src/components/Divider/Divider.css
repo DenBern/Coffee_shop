@@ -1,0 +1,20 @@
+.divider_beans {
+  width: 29.3px;
+  height: 28.16px;
+}
+
+hr {
+  width: 60px;
+}
+
+.coffee_lines {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.divider_wrapper {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,19 +1,11 @@
 import './AboutUs.css';
-import coffeBeansBlack from '../../assets/png/coffee_beans_black.png';
+import { Divider } from '../Divider/Divider';
 
 export const AboutUs = () => {
   return (
     <section className="about_us">
       <h2>About Us</h2>
-      <div className="coffee_lines">
-        <div>
-          <hr></hr>
-        </div>
-          <img src={coffeBeansBlack} alt="coffee_beans_black_fill" />
-        <div>
-            <hr></hr>
-        </div>
-      </div>
+      <Divider color='black' />
       <div className="description_about_us_wrapper">
         <p className="description_about_us">
           Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.

@@ -4,9 +4,7 @@ import './NavigationList.css';
 export const NavigationList = ({name}) => {
   return (
     <div className={`navigation_${name}`}>
-        <>
           {getNavigation(name)}
-        </>
         <nav>
             <ul className="items">
                 <li className="item_li">

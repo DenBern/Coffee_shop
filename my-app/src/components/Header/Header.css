@@ -40,17 +40,6 @@ h1 {
     gap: 20px;
 }
 
-hr {
-    width: 60px;
-}
-
-.coffee_lines {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 25px;
-}
-
 .button_more {
     width: 120px;
     height: 30px;
