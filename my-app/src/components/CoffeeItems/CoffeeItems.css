@@ -19,7 +19,7 @@
   align-items: center;
   gap: 14px;
   background: rgba(255, 255, 255, 0.65);
-  padding: 22px 35px 22px 34px;
+  padding: 22px 22px 22px 21px;
   border-radius: 8px;
 }
 
@@ -33,7 +33,20 @@
   align-items: flex-end;
   gap: 10px;
 }
+
 .item_price {
   display: flex;
   align-items: flex-end;
+}
+
+.coffee_item_image {
+  width: 151px;
+  height: 130px;
+}
+
+.item_name {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
