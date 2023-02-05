@@ -1,7 +1,7 @@
-import { CoffeeItems } from '../CoffeeItems/CoffeeItems';
-import './OurBest.css';
+import { CoffeeItems } from '../../CoffeeItems/CoffeeItems';
+import './OurBestSection.css';
 
-export const OurBest = ({data}) => {
+export const OurBestSection = ({data}) => {
 
   const elements = data.map(item => { 
     const {id, ...itemProps } = item;

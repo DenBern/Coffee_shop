@@ -7,14 +7,14 @@ export const getDivider = ({color}) => {
       return (
         <div className="coffee_lines">
           <div>
-            <hr></hr>
+            <hr className="two_hr"></hr>
           </div>
           <div 
           className="divider_beans"
           style={{backgroundImage: `url(${whiteDividerBeans})`}}>
           </div>
           <div>
-            <hr></hr>
+            <hr className="two_hr"></hr>
           </div>
         </div>
       )
@@ -22,14 +22,14 @@ export const getDivider = ({color}) => {
       return (
         <div className="coffee_lines">
           <div>
-            <hr></hr>
+            <hr className="two_hr"></hr>
           </div>
           <div 
           className="divider_beans"
           style={{backgroundImage: `url(${blackDividerBeans})`}}>
           </div>
           <div>
-            <hr></hr>
+            <hr className="two_hr"></hr>
           </div>
         </div>
       )

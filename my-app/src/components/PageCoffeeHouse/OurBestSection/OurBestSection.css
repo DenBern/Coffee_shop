@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     gap: 39px;
-    background-image: url(../../assets/png/our_bests.png);
+    background-image: url(../../../assets/png/our_bests.png);
+    background-size: cover;
 }
 
 .our_best_container {

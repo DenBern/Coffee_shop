@@ -1,21 +1,19 @@
 import { NavigationList } from '../NavigationList/NavigationList';
-import { Divider } from '../Divider/Divider';
+import { getBackground } from '../../helpers/getBackground';
+import { getDescription } from '../../helpers/getDescription';
 
 import './Header.css';
 
-export const Header = () => {
+export const Header = ({background, description}) => {
     return (
         <div className="header_main">
-            <div className="background">
+            <div 
+                className="background"
+                style={{background: `url(${getBackground(background)})`,
+                backgroundSize: 'cover'}}>
                 <NavigationList name='header' />
-                <div className="desctiption_header">
-                    <h1>Everything You Love About Coffee</h1>
-                    <Divider color='white' />
-                    <p className="">We makes every day full of energy and taste</p>
-                    <p className="">Want to try our beans?</p>
-                    <button className="button_more" type="button">More</button>
-                </div>
-            </div>s
+                {getDescription(description)}
+            </div>
         </div>   
     )
 }

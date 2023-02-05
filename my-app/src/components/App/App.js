@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { Header } from '../Header/Header';
-import { AboutUs } from '../AboutUs/AboutUs';
-import { OurBest } from '../OurBest/OurBest';
+import { AboutSection } from '../AboutSection/AboutSection';
+import { CoffeeBeansListSection } from '../CoffeeBeansListSection/CoffeeBeansListSection';
 import { Footer } from '../Footer/Footer';
 import {data} from '../../data/data';
 
@@ -18,8 +18,8 @@ render () {
   return (
     <div className="App">
       <Header />
-      <AboutUs />
-      <OurBest data={this.state.data} />
+      <AboutSection />
+      <CoffeeBeansListSection data={this.state.data} />
       <Footer />
     </div>
   );
