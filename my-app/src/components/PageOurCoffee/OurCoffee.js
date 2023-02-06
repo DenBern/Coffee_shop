@@ -14,15 +14,15 @@ class OurCoffee extends Component {
     }
 
   render() {
-  return (
-    <div>
-      <Header background='our' description='Our coffee' />
-      <AboutSection name='Our coffee'/>
-      <SearchFilterSection />
-      <Footer />
-    </div>
-  )
-  }
+    return (
+      <div>
+        <Header background='our' description='Our coffee' />
+        <AboutSection name='Our coffee'/>
+        <SearchFilterSection data={this.state.data}/>
+        <Footer />
+      </div>
+    )
+    }
 }
 
 export default OurCoffee;

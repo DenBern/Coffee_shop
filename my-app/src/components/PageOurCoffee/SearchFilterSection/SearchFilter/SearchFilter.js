@@ -1,6 +1,8 @@
+import { FilterButtons } from '../FilterButtons/FilterButtons';
+
 import './SearchFilter.css';
 
-export const SearchFilter = () => {
+export const SearchFilter = ({data}) => {
   return (
     <div className="wrapper_search_buttons">
       <div className="wrapper_search">
@@ -14,23 +16,7 @@ export const SearchFilter = () => {
       </div>
       <div className="wrapper_filter">
         <p className="filter">Or filter</p>
-        <div className="wrapper_buttons">
-          <button
-            type="button" 
-            className="filter_btn"
-            >Brazil
-          </button>
-          <button
-            type="button" 
-            className="filter_btn"
-            >Kenya
-          </button>
-          <button
-            type="button" 
-            className="filter_btn"
-            >Columbia
-          </button>
-        </div>
+        <FilterButtons data={data}/>
       </div>
     </div>
   )

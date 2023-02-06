@@ -1,0 +1,14 @@
+.filter_coffee_items {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper_search_filter_items {
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
