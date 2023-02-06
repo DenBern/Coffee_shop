@@ -37,3 +37,9 @@
   display: flex;
   align-items: flex-end;
 }
+
+.image {
+  width: 151px;
+  height: 130px;
+  background: no-repeat center / contain;
+}

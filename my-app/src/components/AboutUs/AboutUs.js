@@ -28,7 +28,7 @@ export const AboutUs = () => {
           horrible but confined day end marriage. Eagerness furniture set preserved far
           recommend. Did even but nor are most gave hope. Secure active living depend son
           repair day ladies now.
-          </p>
+        </p>
       </div>
     </section>
   )
