@@ -1,0 +1,15 @@
+.our_best {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+    background-image: url(../../assets/png/our_bests.png);
+}
+
+.our_best_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+    padding: 80px 0 110px 0;
+}

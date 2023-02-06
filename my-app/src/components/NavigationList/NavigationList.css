@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 30px 0 0 140px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.navigation.footer {
+  padding: 20px 0 20px 0;
+}
+
+.navigation .logo {
+  width: 30px;
+  height: 30px;
+  background: no-repeat center / contain;
+}
+
+.header .logo {
+  background-image: url('../../assets/png/coffee_beans_white.png');
+}
+
+.footer .logo {
+  background-image: url('../../assets/png/coffee_beans_black.png');
+}
+
+.footer div {
+  color: #000;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+

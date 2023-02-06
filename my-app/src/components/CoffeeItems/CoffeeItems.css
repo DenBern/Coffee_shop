@@ -1,0 +1,45 @@
+.items_wrapper {
+  display: flex;
+}
+
+.coffee_items {
+  display: flex;
+  flex-direction: row;
+  gap: 71px;
+}
+
+.item_wrapper_prica_name {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_coffee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 22px 35px 22px 34px;
+  border-radius: 8px;
+}
+
+.item_coffee p {
+  color: #000000;
+}
+
+.item_wrapper_name_price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.item_price {
+  display: flex;
+  align-items: flex-end;
+}
+
+.image {
+  width: 151px;
+  height: 130px;
+  background: no-repeat center / contain;
+}
