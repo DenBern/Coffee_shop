@@ -1,5 +1,7 @@
-import { TitleDividerDescription } from "../../../сommonComponents/TitleDividerDescription/TitleDividerDescription";
+import { Title} from "../../../сommonComponents/Title/Title";
 import { Line } from '../../../сommonComponents/Line/Line';
+import { Description } from "../../../сommonComponents/Description/Description";
+import { Divider } from "../../../сommonComponents/Divider/Divider";
 
 import aboutOurBeans from '../../../assets/png/about_our_beans.png';
 
@@ -10,7 +12,9 @@ export const AboutDescriptionOurCoffee = ({description, title}) => {
         <div className="about_our_beans" 
           style={{backgroundImage: `url(${aboutOurBeans})`}}>
         </div>
-        <TitleDividerDescription title={title} />
+        <Title title={title} />
+        <Divider color='white'/>
+        <Description />
       </div>
       <Line />
     </section>

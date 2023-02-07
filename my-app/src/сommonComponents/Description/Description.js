@@ -1,11 +1,6 @@
-import { Divider } from "../../сommonComponents/Divider/Divider";
-
-export const TitleDividerDescription = ({title}) => {
+export const Description = () => {
   return (
-    <div className="description_wrapper">
-        <h2>{title}</h2>
-        <Divider color='black' />
-        <div className="description_about_us_wrapper">
+    <div className="description_about_us_wrapper">
           <p className="description_about_us">
             Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
             Afraid at highly months do things on at. Situation recommend objection do intention
@@ -21,6 +16,5 @@ export const TitleDividerDescription = ({title}) => {
             repair day ladies now.
             </p>
         </div>
-      </div>
   )
 }

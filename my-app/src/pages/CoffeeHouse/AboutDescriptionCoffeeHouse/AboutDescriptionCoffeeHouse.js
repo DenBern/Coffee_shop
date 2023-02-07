@@ -1,9 +1,15 @@
-import { TitleDividerDescription } from "../../../сommonComponents/TitleDividerDescription/TitleDividerDescription"
+import { Title } from "../../../сommonComponents/Title/Title";
+import { Divider } from "../../../сommonComponents/Divider/Divider";
+import { Description } from "../../../сommonComponents/Description/Description";
 
 export const AboutDescriptionCoffeeHouse = ({description, title}) => {
   return (
     <section className={`about_us_${description}`}>
-      <TitleDividerDescription title={title} />
+        <div className="description_wrapper">
+          <Title />
+          <Divider />
+          <Description />
+      </div>
     </section>
   )
 }
