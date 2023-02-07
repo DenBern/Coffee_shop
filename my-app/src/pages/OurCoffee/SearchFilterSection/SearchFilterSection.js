@@ -1,4 +1,4 @@
-import { CoffeeItemsFilter } from "../../CoffeeItemsFilter/CoffeeItemsFilter";
+import { CatalogItem } from "../CatalogItem/CatalogItem";
 import { SearchFilter } from "./SearchFilter/SearchFilter"
 
 import './SearchFilterSection.css';
@@ -6,8 +6,8 @@ import './SearchFilterSection.css';
 export const SearchFilterSection = ({data}) => {
   const elements = data.map(item => {
     const {id, ...itemProps } = item;
-    if(!item.best) {
-      return <CoffeeItemsFilter key={id} {...itemProps} />
+    if(item) {
+      return <CatalogItem key={id} {...itemProps} />
     }
   })
   return (

@@ -1,6 +1,6 @@
-import './CoffeeItemsFilter.css';
+import './CatalogItem.css';
 
-export const CoffeeItemsFilter = ({coffee, img, price}) => {
+export const CatalogItem = ({coffee, img, price}) => {
         return (
             <li className="item_filter_wrapper">
                 <div className="item_filter_coffee">

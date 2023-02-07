@@ -1,4 +1,4 @@
-import { TitleDividerDescription } from "../../TitleDividerDescription/TitleDividerDescription"
+import { TitleDividerDescription } from "../../../сommonComponents/TitleDividerDescription/TitleDividerDescription"
 
 export const AboutDescriptionCoffeeHouse = ({description, title}) => {
   return (

@@ -1,4 +1,4 @@
-import { Divider } from "../components/Divider/Divider";
+import { Divider } from "../сommonComponents/Divider/Divider";
 
 export const getDescription = (description) => {
   switch (description) {

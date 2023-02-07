@@ -1,4 +1,4 @@
-import { CoffeeItems } from '../../CoffeeItems/CoffeeItems';
+import { BestItem } from '../../../components/BestItem/BestItem';
 import './OurBestSection.css';
 
 export const OurBestSection = ({data}) => {
@@ -6,7 +6,7 @@ export const OurBestSection = ({data}) => {
   const elements = data.map(item => { 
     const {id, ...itemProps } = item;
     if (item.best) {
-      return <CoffeeItems key={id} {...itemProps} />  
+      return <BestItem key={id} {...itemProps} />  
     }
   })
   return (

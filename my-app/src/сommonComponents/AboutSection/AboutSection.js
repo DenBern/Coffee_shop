@@ -1,5 +1,5 @@
-import { AboutDescriptionOurCoffee } from '../PageOurCoffee/AboutDescriptionOurCoffee/AboutDescriptionOurCoffee';
-import { AboutDescriptionCoffeeHouse } from '../PageCoffeeHouse/AboutDescriptionCoffeeHouse/AboutDescriptionCoffeeHouse';
+import { AboutDescriptionCoffeeHouse } from '../../pages/CoffeeHouse/AboutDescriptionCoffeeHouse/AboutDescriptionCoffeeHouse';
+import { AboutDescriptionOurCoffee } from '../../pages/OurCoffee/AboutDescriptionOurCoffee/AboutDescriptionOurCoffee';
 
 import './AboutSection.css';
 

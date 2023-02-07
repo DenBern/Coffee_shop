@@ -10,7 +10,4 @@ export const data = [
   {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:4},
   {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:5},
   {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:6},
-  {coffee: 'AROMISTICO Coffee 1 kg', country: 'Brazil', img: aromisticoCoffee, price: 6.99, best: false, id:7},
-  {coffee: 'AROMISTICO Coffee 1 kg', country: 'Kenya', img: aromisticoCoffee, price: 6.99, best: false, id:8},
-  {coffee: 'AROMISTICO Coffee 1 kg', country: 'Columbia', img: aromisticoCoffee, price: 6.99, best: false, id:9},
 ];

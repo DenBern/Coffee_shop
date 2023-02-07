@@ -1,4 +1,4 @@
-import { Divider } from '../Divider/Divider';
+import { Divider } from '../../сommonComponents/Divider/Divider';
 import { NavigationList } from '../NavigationList/NavigationList'
 import './Footer.css';
 

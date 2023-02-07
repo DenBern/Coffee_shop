@@ -1,6 +1,6 @@
-import { Header } from "../Header/Header";
-import { AboutSection } from "../AboutSection/AboutSection";
-import { Footer } from "../Footer/Footer";
+import { Header } from "../../сommonComponents/Header/Header";
+import { AboutSection } from '../../сommonComponents/AboutSection/AboutSection'
+import { Footer } from "../../сommonComponents/Footer/Footer";
 import { Component } from "react";
 import { data } from "../../data/data";
 import { SearchFilterSection } from "./SearchFilterSection/SearchFilterSection";

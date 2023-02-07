@@ -1,6 +1,6 @@
-import './CoffeeItems.css';
+import './BestItem.css';
 
-export const CoffeeItems = ({coffee, img, price}) => {
+export const BeastItem = ({coffee, img, price}) => {
     return (
         <li className="item_wrapper">
             <div className="item_coffee">

@@ -1,5 +1,5 @@
-import { TitleDividerDescription } from "../../TitleDividerDescription/TitleDividerDescription";
-import { Line } from "../../Line/Line";
+import { TitleDividerDescription } from "../../../сommonComponents/TitleDividerDescription/TitleDividerDescription";
+import { Line } from '../../../сommonComponents/Line/Line';
 
 import aboutOurBeans from '../../../assets/png/about_our_beans.png';
 
