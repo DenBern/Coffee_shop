@@ -3,7 +3,7 @@ import { Header } from '../Header/Header';
 import { AboutSection } from '../AboutSection/AboutSection';
 import { CoffeeBeansListSection } from '../CoffeeBeansListSection/CoffeeBeansListSection';
 import { Footer } from '../Footer/Footer';
-import {data} from '../../data/data';
+import {data} from '../data/data';
 
 import './App.css';
 class App extends Component {

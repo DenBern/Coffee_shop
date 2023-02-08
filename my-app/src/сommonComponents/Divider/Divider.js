@@ -3,10 +3,7 @@ import blackDividerBeans from '../../assets/png/coffee_beans_black_fill.png';
 
 import  './Divider.css';
 
-const colorDivider = {
-  white: whiteDividerBeans,
-  black: blackDividerBeans,
-};
+
 
 export const Divider = (color) => {
   return (
@@ -17,7 +14,7 @@ export const Divider = (color) => {
           </div>
           <div 
           className="divider_beans"
-          style={{backgroundImage: `url(${color === 'white' ? colorDivider.white : colorDivider.black})`}}>
+          style={{backgroundImage: `url(${color === 'white' ? whiteDividerBeans : blackDividerBeans})`}}>
           </div>
           <div>
             <hr className="two_hr"></hr>

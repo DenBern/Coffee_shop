@@ -1,8 +1,7 @@
-import { BestItem } from '../../../components/BestItem/BestItem';
+import BestItem from '../BestItem/BestItem'
 import './OurBestSection.css';
 
 export const OurBestSection = ({data}) => {
-
   const elements = data.map(item => { 
     const {id, ...itemProps } = item;
     if (item.best) {
@@ -21,5 +20,5 @@ export const OurBestSection = ({data}) => {
       </div>
     </section>
   )
-  }
+}
 
