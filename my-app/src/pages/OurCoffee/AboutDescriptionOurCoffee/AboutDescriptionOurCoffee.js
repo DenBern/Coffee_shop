@@ -1,6 +1,6 @@
 import { Title} from "../../../сommonComponents/Title/Title";
 import { Line } from '../../../сommonComponents/Line/Line';
-import { Description } from "../../../сommonComponents/Description/Description";
+import { Description } from "../../CoffeeHouse/AboutUs/Description/Description";
 import { Divider } from "../../../сommonComponents/Divider/Divider";
 
 import aboutOurBeans from '../../../assets/png/about_our_beans.png';

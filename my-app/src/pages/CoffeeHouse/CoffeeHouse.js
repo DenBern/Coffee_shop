@@ -1,6 +1,6 @@
 import { Header } from "../../сommonComponents/Header/Header";
-import { AboutSection } from "../../сommonComponents/AboutSection/AboutSection";
-import { OurBestSection } from "./OurBestSection/OurBestSection";
+import { AboutUs } from "./AboutUs/AboutUs";
+import { OurBest } from "./OurBest/OurBest";
 import { Footer } from "../../сommonComponents/Footer/Footer";
 import { Component } from "react";
 import { data } from "../../data/data";
@@ -12,15 +12,15 @@ class CoffeeHouse extends Component {
         data: data,
       }
     }
-
   render() {
     return (
       <>
         <Header 
-          background='coffee' 
-          description='Coffee house' />
-        <AboutSection name='Coffee house'/>
-        <OurBestSection data={this.state.data} />
+          background="coffee"
+          description="Coffee house"
+        />
+        <AboutUs name="coffee_house" />
+        <OurBest data={this.state.data} />
         <Footer />
       </>
     )

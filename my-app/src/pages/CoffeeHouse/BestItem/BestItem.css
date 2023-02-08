@@ -13,7 +13,7 @@
   flex-direction: column;
 }
 
-.item_coffee {
+.best-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,30 +23,23 @@
   border-radius: 8px;
 }
 
-.item_coffee p {
-  color: #000000;
-}
-
-.item_wrapper_name_price {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-.item_price {
-  display: flex;
-  align-items: flex-end;
-}
-
-.coffee_item_image {
+.best-item_image {
   width: 151px;
   height: 130px;
 }
 
-.item_name {
+.best-item_text {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+.best-item_text_name,
+.best-item_text_price {
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
+
+  text-align: center;
+
+  color: #000000;
 }

@@ -4,10 +4,12 @@ import './Footer.css';
 
 export const Footer = () => {
   return (
-    <div className="footer_wrapper">
-      <NavigationList name="footer" />
-      <Divider color='black' />
-    </div>
+    <footer>
+      <div className="footer_wrapper">
+        <NavigationList name="footer" />
+        <Divider color='black' />
+      </div>
+    </footer>
       
   )
 }
