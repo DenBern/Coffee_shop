@@ -5,7 +5,7 @@ import { Divider } from "../../../сommonComponents/Divider/Divider";
 
 import aboutOurBeans from '../../../assets/png/about_our_beans.png';
 
-export const AboutDescriptionOurCoffee = ({description, title}) => {
+export const AboutOurBeans = ({description, title}) => {
   return (
     <section className={`about_us_${description}`}>
       <div className="image_divider_wrapper">

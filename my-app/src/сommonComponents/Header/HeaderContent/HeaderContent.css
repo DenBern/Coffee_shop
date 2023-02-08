@@ -11,8 +11,9 @@
 
 .header_description_empty {
   display: flex;
-  align-items: center;
-  padding: 15px 20px 30px 40px;
+  justify-content: center;
+  padding: 60px 0px 84px 0px;
+  margin: 0 auto;
 }
 
 .header_description_text {

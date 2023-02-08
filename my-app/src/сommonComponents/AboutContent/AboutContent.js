@@ -1,6 +1,7 @@
 import { AboutUs } from '../../pages/CoffeeHouse/AboutUs/AboutUs';
+import { AboutOurBeans } from '../../pages/OurCoffee/AboutOurBeans/AboutOurBeans';
 
-import './AboutSection.css';
+import './AboutContent.css';
 
 export const AboutContent = ({name}) => {
   if (name === 'coffee_house') {
