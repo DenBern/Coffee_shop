@@ -1,8 +1,12 @@
-.navigation_header {
+nav {
+  display: flex;
+
+}
+.header_navigation {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  padding: 30px 0 0 140px;
+  padding: 30px 0 0 148px;
 }
 
 .navigation_footer {
@@ -11,10 +15,12 @@
   align-items: flex-end;
 }
 
-.items {
+.navigation {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  align-items: flex-end;
+
 
   font-style: normal;
   font-weight: 400;
@@ -22,7 +28,9 @@
   line-height: 17px;
 }
 
-.beans_logo {
+
+.navigation_logo {
+  display: flex;
   width: 35px;
   height: 35px;
 }

@@ -15,12 +15,14 @@ class CoffeeHouse extends Component {
 
   render() {
     return (
-      <div>
-        <Header background='coffee' description='Coffee house' />
+      <>
+        <Header 
+          background='coffee' 
+          description='Coffee house' />
         <AboutSection name='Coffee house'/>
         <OurBestSection data={this.state.data} />
         <Footer />
-      </div>
+      </>
     )
   }
 }

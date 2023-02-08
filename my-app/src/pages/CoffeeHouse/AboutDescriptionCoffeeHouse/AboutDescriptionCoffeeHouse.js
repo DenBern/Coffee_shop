@@ -6,7 +6,6 @@ export const AboutDescriptionCoffeeHouse = ({description, title}) => {
   return (
     <section className={`about_us_${description}`}>
         <div className="description_wrapper">
-          <Title />
           <Divider />
           <Description />
       </div>

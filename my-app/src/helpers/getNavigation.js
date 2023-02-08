@@ -5,13 +5,13 @@ export const getNavigation = (name) => {
   switch (name) {
     case 'header':
       return (
-        <div className="beans_logo"
+        <div className="navigation_logo"
           style={{backgroundImage: `url(${coffeeBeansWhite})`}}>
         </div>
       );
     case 'footer':
       return (
-        <div className="beans_logo"
+        <div className="navigation_logo"
           style={{backgroundImage: `url(${coffeeBeansBlack})`}}>
         </div>
       );

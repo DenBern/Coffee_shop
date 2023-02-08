@@ -5,21 +5,19 @@ import  './Divider.css';
 
 
 
-export const Divider = (color) => {
+export const Divider = ({color}) => {
   return (
-    <div className='divider_wrapper'>
-      <div className="coffee_lines">
+    <div className="divider">
           <div>
-            <hr className="two_hr"></hr>
+            <hr className="divider_line_hr"></hr>
           </div>
           <div 
-          className="divider_beans"
-          style={{backgroundImage: `url(${color === 'white' ? whiteDividerBeans : blackDividerBeans})`}}>
+            className="divider_logo"
+            style={{backgroundImage: `url(${color === 'white' ? whiteDividerBeans : blackDividerBeans})`}}>
           </div>
           <div>
-            <hr className="two_hr"></hr>
+            <hr className="divider_line_hr"></hr>
           </div>
-        </div>
     </div>
   )
 }
