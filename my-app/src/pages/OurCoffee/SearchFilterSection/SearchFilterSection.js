@@ -1,5 +1,5 @@
-import { CatalogItem } from "../CatalogItem/CatalogItem";
-import { ControlPanel } from "./ControlPanel/ControlPanel"
+import { CatalogItem } from "../CatalogItem/CatalogItem"
+import { ControlPanel } from "../SearchFilterSection/ControlPanel/ControlPanel";
 
 import './SearchFilterSection.css';
 
