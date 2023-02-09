@@ -1,8 +1,8 @@
 import { FilterButtons } from '../FilterButtons/FilterButtons';
 
-import './SearchFilter.css';
+import './ControlPanel.css';
 
-export const SearchFilter = ({data}) => {
+export const ControlPanel = ({data}) => {
   return (
     <div className="wrapper_search_buttons">
       <div className="wrapper_search">

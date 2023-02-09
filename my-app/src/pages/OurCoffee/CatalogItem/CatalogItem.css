@@ -6,19 +6,12 @@
   justify-content: center;
 }
 
-.item_filter_wrapper {
+.catalog-product_wrapper {
   display: flex;
   flex-direction: row;
 }
 
-.item_filter_wrapper_name_price{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 10px;
-}
-
-.item_filter_coffee {
+.catalog-product {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,27 +25,37 @@
   border-radius: 4px;
 }
 
-.item_filter_coffee:hover {
+.catalog-product:hover {
   box-shadow:8px 8px 40px rgba(26, 238, 65, 0.45);
 }
 
-.item_filter_coffee p {
+.catalog-product_image {
+  width: 167px;
+  height: 115px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.catalog-product_description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.catalog-product_price {
+  display: flex;
+  align-items: flex-end;
+
   color: #000;
 }
 
-.item_filter_price {
-  display: flex;
-  align-items: flex-end;
-}
-
-.coffee_filter_item_image {
-  width: 167px;
-  height: 115px;
-}
-
-.item_filter_name {
+.catalog-product_name {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+
+  color: #000;
 }

@@ -1,16 +1,19 @@
-.filter_coffee_items {
+.catalog-products {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-}
-
-.wrapper_search_filter_items {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 61px;
 
     max-width: 1000px;
     margin: 0 auto;
     padding-bottom: 30px;
+}
+
+.catalog-products_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
 }
 
 .coffee_filter_item_image {

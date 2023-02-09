@@ -1,5 +1,5 @@
 import { CatalogItem } from "../CatalogItem/CatalogItem";
-import { SearchFilter } from "./SearchFilter/SearchFilter"
+import { ControlPanel } from "./ControlPanel/ControlPanel"
 
 import './SearchFilterSection.css';
 
@@ -11,13 +11,11 @@ export const SearchFilterSection = ({data}) => {
     }
   })
   return (
-    <div className="wrapper_search_filter_items">
-      <SearchFilter data={data}/>
-      <div className="wrapper_coffee_items">
-        <ul className="filter_coffee_items">
+    <section className="catalog-products_wrapper">
+      <ControlPanel data={data}/>
+        <ul className="catalog-products">
           {elements}
         </ul>
-      </div>
-    </div>
+    </section>
   )
 }
