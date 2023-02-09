@@ -1,7 +1,6 @@
 import './Description.css';
 
 export const Description = ({name}) => {
-  console.log(name)
   if (name === "about-us") {
     return (
       <div className={`${name}_text_wrapper`}>
