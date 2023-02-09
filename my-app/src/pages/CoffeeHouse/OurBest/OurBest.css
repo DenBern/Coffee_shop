@@ -5,7 +5,7 @@
     gap: 39px;
     background-image: url(../../../assets/png/our_bests.png);
     background-size: cover;
-  }
+}
 
 .our_best_content {
     display: flex;

@@ -2,17 +2,6 @@
   display: flex;
 }
 
-.coffee_items {
-  display: flex;
-  flex-direction: row;
-  gap: 71px;
-}
-
-.item_wrapper_prica_name {
-  display: flex;
-  flex-direction: column;
-}
-
 .best-item {
   display: flex;
   flex-direction: column;
@@ -34,6 +23,7 @@
   align-items: end;
   gap: 10px;
 }
+
 .best-item_text_name,
 .best-item_text_price {
   font-size: 14px;
