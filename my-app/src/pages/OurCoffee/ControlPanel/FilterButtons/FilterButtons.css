@@ -1,0 +1,49 @@
+.filter-buttons_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.filter-buttons-text {
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+.btn-outline-light {
+    width: 75px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+
+    font-family: 'Merienda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+
+.btn-light {
+    box-shadow: 8px 8px 40px rgba(191, 94, 14, 0.45);
+}
+
+.btn-outline-light:hover {
+    box-shadow: 8px 8px 40px rgba(26, 238, 65, 0.45);
+}
+
+.btn-light:hover {
+    box-shadow: 8px 8px 40px rgba(26, 238, 65, 0.45);
+}

@@ -13,16 +13,20 @@ export const FilterButtons = (props) => {
       const clazz = active ? 'btn-light' : 'btn-outline-light';
       return (
         <button 
-          className = {`btn ${clazz}`}
+          className = {`${clazz}`}
           type = "button"
-          key={name}>
+          key={name}
+          >{name}
         </button>
       )
     })
   
-    return ( 
-      <div className = "wrapper_buttons">
+    return (
+      <div className="filter-buttons_wrapper">
+      <p className="filter-buttons-text">Or filter</p>
+      <div className = "filter-buttons">
         {buttons}
       </div>
-    );
+      </div>
+    )
   }

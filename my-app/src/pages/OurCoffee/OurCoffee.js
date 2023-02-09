@@ -1,9 +1,11 @@
 import { data } from "../../data/data";
 import { Component } from "react";
 import { Header } from "../../сommonComponents/Header/Header";
-import { AboutOurBeans } from "./AboutOurBeans/AboutOurBeans"
+import { AboutOurBeans } from "./AboutOurBeans/AboutOurBeans";
+import { ControlPanel } from "./ControlPanel/ControlPanel";
+import { CatalogProducts } from "./CatalogProducts/CatalogProducts";
 import { Footer } from "../../сommonComponents/Footer/Footer";
-import { SearchFilterSection } from "./SearchFilterSection/SearchFilterSection"
+
 class OurCoffee extends Component {
     constructor(props) {
       super(props);
@@ -24,7 +26,8 @@ class OurCoffee extends Component {
             title="About our beans"  
             section="about-our-beans"
           />
-          <SearchFilterSection data={this.state.data}/>
+          <ControlPanel data={this.state.data}/>
+          <CatalogProducts data={this.state.data}/>
         </main>
         <Footer />
       </div>
