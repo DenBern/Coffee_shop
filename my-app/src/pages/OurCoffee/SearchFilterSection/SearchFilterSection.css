@@ -12,3 +12,9 @@
     margin: 0 auto;
     padding-bottom: 30px;
 }
+
+.coffee_filter_item_image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

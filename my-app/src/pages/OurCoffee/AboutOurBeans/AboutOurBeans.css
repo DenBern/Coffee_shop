@@ -1,0 +1,43 @@
+.about-our-beans_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 57px;
+  
+
+  padding: 80px 0 60px 0;
+  margin: 0 auto;
+}
+
+.about-our-beans_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-our-beans_image {
+  width: 272px;
+  height: 355px;
+}
+
+.about-our-beans_text {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.about-our-beans_text_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 346px;
+}
+
+.hello {
+  display: flex;
+  flex-direction: row;
+  gap: 79px;
+}

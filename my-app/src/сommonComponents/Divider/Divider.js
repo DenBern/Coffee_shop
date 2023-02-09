@@ -9,14 +9,14 @@ export const Divider = ({color}) => {
   return (
     <div className="divider">
           <div>
-            <hr className="divider_line_hr"></hr>
+            <hr className="divider-line-hr"></hr>
           </div>
           <div 
-            className="divider_logo"
+            className="divider-logo"
             style={{backgroundImage: `url(${color === 'white' ? whiteDividerBeans : blackDividerBeans})`}}>
           </div>
           <div>
-            <hr className="divider_line_hr"></hr>
+            <hr className="divider-line-hr"></hr>
           </div>
     </div>
   )

@@ -4,7 +4,7 @@ import { Title } from "../../../сommonComponents/Title/Title";
 
 import './AboutUs.css';
 
-export const AboutUs = ({name}) => {
+export const AboutUs = () => {
   return (
     <section className="about-us">
       <div className="about-us_wrapper">
@@ -12,7 +12,7 @@ export const AboutUs = ({name}) => {
           <Title title="About Us" />
           <Divider />
         </div>
-        <Description />
+        <Description name="about-us"/>
       </div>
     </section>
   )

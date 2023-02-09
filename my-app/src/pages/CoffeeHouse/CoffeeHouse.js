@@ -19,7 +19,10 @@ class CoffeeHouse extends Component {
           background="coffee"
           description="Coffee house"
         />
-        <AboutUs name="coffee_house" />
+        <AboutUs 
+          name="coffee_house" 
+          section="about-us"
+        />
         <OurBest data={this.state.data} />
         <Footer />
       </>

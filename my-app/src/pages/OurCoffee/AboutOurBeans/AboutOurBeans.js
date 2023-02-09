@@ -1,20 +1,24 @@
 import { Title} from "../../../сommonComponents/Title/Title";
 import { Line } from '../../../сommonComponents/Line/Line';
-import { Description } from "../../CoffeeHouse/AboutUs/Description/Description";
+import { Description } from "../../../сommonComponents/Description/Description";
 import { Divider } from "../../../сommonComponents/Divider/Divider";
+
+import './AboutOurBeans.css';
 
 import aboutOurBeans from '../../../assets/png/about_our_beans.png';
 
-export const AboutOurBeans = ({description, title}) => {
+export const AboutOurBeans = ({title, section}) => {
   return (
-    <section className={`about_us_${description}`}>
-      <div className="image_divider_wrapper">
-        <div className="about_our_beans" 
+    <section className={`${section}_wrapper`}>
+      <div className="hello">
+        <div className={`${section}_image`}
           style={{backgroundImage: `url(${aboutOurBeans})`}}>
         </div>
-        <Title title={title} />
-        <Divider color='white'/>
-        <Description />
+        <div className={`${section}_content`}>
+          <Title title={title} />
+          <Divider color='black'/>
+          <Description name={section}/>
+        </div>
       </div>
       <Line />
     </section>
