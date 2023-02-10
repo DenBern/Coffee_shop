@@ -19,7 +19,7 @@
     line-height: 20px;
   }
 
-.btn-outline-light {
+.btn {
     width: 75px;
     height: 30px;
     background: #FFFFFF;
@@ -36,14 +36,7 @@
     color: #000000;
 }
 
-.btn-light {
-    box-shadow: 8px 8px 40px rgba(191, 94, 14, 0.45);
-}
-
-.btn-outline-light:hover {
-    box-shadow: 8px 8px 40px rgba(26, 238, 65, 0.45);
-}
-
-.btn-light:hover {
-    box-shadow: 8px 8px 40px rgba(26, 238, 65, 0.45);
+.active {
+    border: 2px solid rgb(123, 125, 123);
+    background-color: transparent;
 }

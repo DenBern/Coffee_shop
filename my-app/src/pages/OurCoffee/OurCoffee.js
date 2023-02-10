@@ -13,6 +13,7 @@ class OurCoffee extends Component {
       this.state = {
         data: data,
         search: '',
+        filter: '',
       }
     }
 
@@ -30,9 +31,30 @@ class OurCoffee extends Component {
     this.setState({search: search});
   }
 
+  filteredProducts = (products, filter) => {
+    switch (filter) {
+      case 'Brazil':
+        return products.filter(product => product.country === 'Brazil');
+      case 'Kenya':
+        return products.filter(product => product.country === 'Kenya');
+      case 'Columbia':
+        return products.filter(product => product.country === 'Columbia');
+      case 'Italy':
+        return products.filter(product => product.country === 'Italy');
+        case 'Belgium':
+        return products.filter(product => product.country === 'Belgium');
+      default:
+        return products
+    }
+  }
+
+  onFilterSelect = (filter) => {
+    this.setState({filter})
+  }
+
   render() {
-    const {data, search} = this.state;
-    const visibleProducts = this.searchCoffeeBeans(data, search)
+    const {data, search, filter} = this.state;
+    const visibleProducts = this.filteredProducts(this.searchCoffeeBeans(data, search), filter)
     return (
       <>
         <Header 
@@ -43,9 +65,10 @@ class OurCoffee extends Component {
             title="About our beans"  
             section="about-our-beans"/>
           <ControlPanel 
-            data={data} 
-            onUpdateSearch={this.onUpdateSearch}/>
-          <CatalogProducts products={visibleProducts}/>
+            onUpdateSearch={this.onUpdateSearch}
+            filter={filter}
+            onFilterSelect={this.onFilterSelect} />
+          <CatalogProducts products={visibleProducts} />
         </main>
         <Footer />
       </>
