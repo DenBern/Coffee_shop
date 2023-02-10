@@ -18,7 +18,7 @@
 }
 
 .catalog-product:hover {
-  box-shadow:8px 8px 40px rgba(26, 238, 65, 0.45);
+  box-shadow: 8px 8px 40px rgba(26, 238, 65, 0.45);
 }
 
 .catalog-product_image {
@@ -43,11 +43,9 @@
   color: #000;
 }
 
-.catalog-product_name {
+.catalog-product_name,
+.catalog-product_country {
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
 
   color: #000;
 }
