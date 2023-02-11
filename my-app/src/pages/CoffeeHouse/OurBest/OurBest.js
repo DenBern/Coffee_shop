@@ -1,12 +1,12 @@
 import { Title } from '../../../сommonComponents/Title/Title';
-import BestItem from '../BestItem/BestItem'
+import BestProduct from '../BestProduct/BestProduct'
 import './OurBest.css';
 
 export const OurBest = ({data}) => {
   const elements = data.map(item => { 
     const {id, ...itemProps } = item;
     if (item.best) {
-      return <BestItem key={id} {...itemProps} />  
+      return <BestProduct key={id} {...itemProps} />  
     }
   })
   return (
