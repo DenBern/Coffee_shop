@@ -23,7 +23,7 @@ class OurCoffee extends Component {
     }
 
     return products.filter(product => {
-      return product.name.indexOf(search) > -1
+      return product.name.toLowerCase().indexOf(search.toLowerCase()) > -1
     })
   }
 
@@ -59,7 +59,8 @@ class OurCoffee extends Component {
       <>
         <Header 
           background="our" 
-          description="Our coffee"/>
+          description="Our coffee"
+        />
         <main>
           <AboutOurBeans 
             title="About our beans"  

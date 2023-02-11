@@ -4,7 +4,6 @@ import coffeeBeansBlack from '../../assets/png/coffee_beans_black.png';
 import './NavigationList.css';
 
 export const NavigationList = ({name}) => {
-  console.log(name)
   return (
     <div className={`${name}_navigation`}>
         <nav>
