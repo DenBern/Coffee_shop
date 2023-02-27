@@ -2,7 +2,6 @@ import { data } from "../../data/data";
 import { Component } from "react";
 import { Header } from "../../сommonComponents/Header/Header";
 import { AboutOurBeans } from "./AboutOurBeans/AboutOurBeans";
-import Search from "./ControlPanel/Search/Search";
 import { ControlPanel } from "./ControlPanel/ControlPanel";
 import { CatalogProducts } from "./CatalogProducts/CatalogProducts";
 import { Footer } from "../../сommonComponents/Footer/Footer";

@@ -7,12 +7,12 @@ export const NavigationList = ({name}) => {
   return (
     <div className={`${name}_navigation`}>
         <nav>
-        <div className="navigation_logo"
-          style={{backgroundImage: `url(${name === 'header' ? coffeeBeansWhite : coffeeBeansBlack})`}}>
-        </div>
+          <div className="navigation_logo"
+            style={{backgroundImage: `url(${name === 'header' ? coffeeBeansWhite : coffeeBeansBlack})`}}>
+          </div>
           <ul className="navigation">
                 <li className="navigation_item">
-                  <a href="https://www.google.com/">Coffee house</a>
+                  <a href="/">Coffee house</a>
                 </li>
                 <li className="navigation_item">
                   <a href="https://www.google.com/">Our coffee</a>
