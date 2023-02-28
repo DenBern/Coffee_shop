@@ -14,13 +14,13 @@ export const NavigationList = ({name}) => {
           </div>
           <ul className="navigation">
                 <li className="navigation_item">
-                  <a href="/coffeehouse">Coffee house</a>
+                  <Link to="/coffeehouse">Coffee house</Link>
                 </li>
                 <li className="navigation_item">
-                  <a href="https://www.google.com/">Our coffee</a>
+                  <Link to="/ourcoffee">Our coffee</Link>
                 </li>
                 <li className="navigation_item">
-                  <a href="https://www.google.com/">For your pleasure</a>
+                  <a href="#">For your pleasure</a>
                 </li>
           </ul>
         </nav>
