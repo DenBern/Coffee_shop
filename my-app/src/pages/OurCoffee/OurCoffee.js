@@ -1,10 +1,8 @@
 import { data } from "../../data/data";
 import { Component } from "react";
-import { Header } from "../../сommonComponents/Header/Header";
 import { AboutOurBeans } from "./AboutOurBeans/AboutOurBeans";
 import { ControlPanel } from "./ControlPanel/ControlPanel";
 import { CatalogProducts } from "./CatalogProducts/CatalogProducts";
-import { Footer } from "../../сommonComponents/Footer/Footer";
 
 class OurCoffee extends Component {
     constructor(props) {
@@ -56,24 +54,18 @@ class OurCoffee extends Component {
     const visibleProducts = this.filteredProducts(this.searchCoffeeBeans(data, search), filter)
     return (
       <>
-        <Header 
-          background="our" 
-          description="Our coffee"
-        />
-        <main>
           <AboutOurBeans 
             title="About our beans"  
-            section="about-our-beans"/>
+            section="about-our-beans"
+          />
           <ControlPanel 
             onUpdateSearch={this.onUpdateSearch}
             filter={filter}
             onFilterSelect={this.onFilterSelect} />
           <CatalogProducts products={visibleProducts} />
-        </main>
-        <Footer />
       </>
     )
-    }
+  }
 }
 
 export default OurCoffee;

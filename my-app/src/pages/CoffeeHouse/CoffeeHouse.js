@@ -1,7 +1,5 @@
-import { Header } from "../../сommonComponents/Header/Header";
 import { AboutUs } from "./AboutUs/AboutUs";
 import { OurBest } from "./OurBest/OurBest";
-import { Footer } from "../../сommonComponents/Footer/Footer";
 import { Component } from "react";
 import { data } from "../../data/data";
 
@@ -15,18 +13,11 @@ class CoffeeHouse extends Component {
   render() {
     return (
       <>
-        <Header 
-          background="coffee"
-          description="Coffee house"
-        />
-          <main>
           <AboutUs 
             name="coffee_house" 
             section="about-us"
           />
           <OurBest data={this.state.data} />
-        </main>
-        <Footer />
       </>
     )
   }
