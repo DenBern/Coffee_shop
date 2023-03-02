@@ -1,8 +1,8 @@
 import { Component } from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import {data} from '../data/data';
 
-import { Header } from '../сommonComponents/Header/Header';
 import CoffeeHouse from '../pages/CoffeeHouse/CoffeeHouse';
 import OurCoffee from '../pages/OurCoffee/OurCoffee';
 import { Footer } from '../сommonComponents/Footer/Footer';
@@ -18,19 +18,17 @@ class App extends Component {
     }
   }
 
-render () {
-  return (
-      <div className="app">
-        <Header />
-        <main>
-            <Routes>
-              <Route path="/*" element={<CoffeeHouse />} />
-              <Route path="/ourcoffee" element={<OurCoffee />} />
-            </Routes>
-        </main>
-        <Footer />
-      </div>
-  );
+  render () {
+    return (
+        <div className="app">
+              <Routes>
+                <Route path="/*" element={<CoffeeHouse />} />
+                <Route path="/ourcoffee" element={<OurCoffee />} />
+              </Routes>
+          <Footer />
+        </div>
+    );
+  }
 }
-}
+
 export default App;

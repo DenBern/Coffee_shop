@@ -3,6 +3,7 @@ import { Component } from "react";
 import { AboutOurBeans } from "./AboutOurBeans/AboutOurBeans";
 import { ControlPanel } from "./ControlPanel/ControlPanel";
 import { CatalogProducts } from "./CatalogProducts/CatalogProducts";
+import { Header } from "../../сommonComponents/Header/Header";
 
 class OurCoffee extends Component {
     constructor(props) {
@@ -11,8 +12,11 @@ class OurCoffee extends Component {
         data: data,
         search: '',
         filter: '',
+        state: '',
       }
     }
+
+    
 
   searchCoffeeBeans = (products, search) => {
     if (search.length === 0) {
@@ -54,15 +58,21 @@ class OurCoffee extends Component {
     const visibleProducts = this.filteredProducts(this.searchCoffeeBeans(data, search), filter)
     return (
       <>
-          <AboutOurBeans 
-            title="About our beans"  
-            section="about-our-beans"
+          <Header 
+            background="our" 
+            description="Our coffee" 
           />
-          <ControlPanel 
-            onUpdateSearch={this.onUpdateSearch}
-            filter={filter}
-            onFilterSelect={this.onFilterSelect} />
-          <CatalogProducts products={visibleProducts} />
+          <main>
+            <AboutOurBeans 
+              title="About our beans"  
+              section="about-our-beans"
+            />
+            <ControlPanel 
+              onUpdateSearch={this.onUpdateSearch}
+              filter={filter}
+              onFilterSelect={this.onFilterSelect} />
+            <CatalogProducts products={visibleProducts} />
+          </main>
       </>
     )
   }

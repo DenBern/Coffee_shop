@@ -13,7 +13,7 @@ export const Header = ({background, description}) => {
                 className="header"
                 style={{background: `url(${background === 'coffee' ? coffeeHeaderBackground : coffeeOurCoffeeBackground})`,
                 backgroundSize: 'cover'}}>
-                <NavigationList name='header' />
+                <NavigationList name='header'/>
                 <HeaderContent description={description}/>
             </div>
         </header>
