@@ -1,7 +1,7 @@
 nav {
   display: flex;
-
 }
+
 .header_navigation {
   display: flex;
   flex-direction: row;
@@ -21,16 +21,22 @@ nav {
   gap: 40px;
   align-items: flex-end;
 
-
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
 }
 
-
 .navigation_logo {
   display: flex;
   width: 35px;
   height: 35px;
+}
+
+.link:hover {
+  color: #ffffff;
+}
+
+.link-active {
+  color: #bd6304;
 }

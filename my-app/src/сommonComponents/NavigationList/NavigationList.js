@@ -5,7 +5,9 @@ import coffeeBeansBlack from '../../assets/png/coffee_beans_black.png';
 
 import './NavigationList.css';
 
-export const NavigationList = ({name, activePage}) => {
+export const NavigationList = ({name}) => {
+
+
   return (
     <div className={`${name}_navigation`}>
         <nav>
@@ -14,17 +16,21 @@ export const NavigationList = ({name, activePage}) => {
           </div>
           <ul className="navigation">
                 <li 
-                  className="navigation_item" 
-                  onClick={() => activePage()}>
-                  <Link to="/coffeehouse">Coffee house</Link>
+                  className="navigation_item">
+                  <Link 
+                    to="/coffeehouse">Coffee house
+                  </Link>
                 </li>
                 <li 
-                  className="navigation_item"
-                  onClick={() => activePage()}>
-                  <Link to="/ourcoffee">Our coffee</Link>
+                  className="navigation_item">
+                  <Link 
+                    to="/ourcoffee">Our coffee
+                  </Link>
                 </li>
                 <li className="navigation_item">
-                  <a href="#">For your pleasure</a>
+                  <Link 
+                    to="#">For your pleasure
+                  </Link>
                 </li>
           </ul>
         </nav>
