@@ -24,7 +24,8 @@ class Search extends Component {
                     className="search-input"
                     placeholder="start typing here..."
                     value={this.state.search}
-                    onChange={this.onUpdateSearch}/>
+                    onChange={this.onUpdateSearch}
+                />
             </div>
         )
     }

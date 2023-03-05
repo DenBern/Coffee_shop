@@ -1,14 +1,15 @@
-import { Title } from "../Title/Title";
 import { Divider } from "../../Divider/Divider";
+import { PAGES_DESCRIPTION } from "../../../constants/constants";
+import { COLORS } from "../../../constants/constants";
 
 import './HeaderContent.css';
 
 export const HeaderContent = ({description}) => {
-  if (description === "Coffee house") {
+  if (description === PAGES_DESCRIPTION.MAIN) {
     return (
       <div className="header_description">
-        <Title description={description}/>
-        <Divider color="white" />
+        <h1>Everything You Love About Coffee</h1>
+        <Divider color={COLORS.WHITE} />
         <div className="header_description_text">
           <p>We makes every day full of energy and taste</p>
           <p>Want to try our beans?</p>
@@ -19,7 +20,7 @@ export const HeaderContent = ({description}) => {
   } else {
     return (
       <div className="header_description_empty">
-        <Title description={description}/>
+        <h1>Our coffee</h1>
       </div>
     )
   }

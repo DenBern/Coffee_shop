@@ -1,5 +1,6 @@
 import { NavigationList } from '../NavigationList/NavigationList';
 import {HeaderContent} from './HeaderContent/HeaderContent';
+import { ROUTES } from '../../constants/constants';
 
 import './Header.css';
 
@@ -11,10 +12,14 @@ export const Header = ({background, description}) => {
         <header>
             <div 
                 className="header"
-                style={{background: `url(${background === 'coffee' ? coffeeHeaderBackground : coffeeOurCoffeeBackground})`,
-                backgroundSize: 'cover'}}>
-                <NavigationList name='header'/>
-                <HeaderContent description={description}/>
+                style={
+                    {
+                        background: `url(${background === ROUTES.MAIN ? coffeeHeaderBackground : coffeeOurCoffeeBackground})`,
+                        backgroundSize: 'cover',
+                    }
+                }>
+                <NavigationList name='header' />
+                <HeaderContent description={description} />
             </div>
         </header>
     )

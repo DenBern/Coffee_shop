@@ -9,7 +9,8 @@ export const ControlPanel = ({onUpdateSearch, filter, onFilterSelect}) => {
       <Search onUpdateSearch={onUpdateSearch}/>
       <FilterButtons 
         filter={filter} 
-        onFilterSelect={onFilterSelect} />
+        onFilterSelect={onFilterSelect} 
+      />
     </section>
   )
 }
