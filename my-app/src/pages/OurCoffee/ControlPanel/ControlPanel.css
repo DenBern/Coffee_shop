@@ -1,0 +1,7 @@
+.controls-panel_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 83px;
+}
+

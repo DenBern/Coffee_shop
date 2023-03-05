@@ -1,9 +1,0 @@
-.background {
-    background-image: url(../../assets/png/header_background.png);
-    background-size: 100%;
-}
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-}
