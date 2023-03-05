@@ -13,7 +13,11 @@ export const Divider = ({color}) => {
           </div>
           <div 
             className="divider-logo"
-            style={{backgroundImage: `url(${color === 'white' ? whiteDividerBeans : blackDividerBeans})`}}>
+            style={
+              {
+                backgroundImage: `url(${color === 'white' ? whiteDividerBeans : blackDividerBeans})`
+              }
+            }>
           </div>
           <div>
             <hr className="divider-line-hr"></hr>

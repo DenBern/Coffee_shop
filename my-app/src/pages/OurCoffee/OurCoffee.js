@@ -4,7 +4,8 @@ import { AboutOurBeans } from "./AboutOurBeans/AboutOurBeans";
 import { ControlPanel } from "./ControlPanel/ControlPanel";
 import { CatalogProducts } from "./CatalogProducts/CatalogProducts";
 import { Header } from "../../сommonComponents/Header/Header";
-
+import { PAGES_DESCRIPTION } from "../../constants/constants";
+import { PRODUCTS_COUNTRY } from "../../constants/constants";
 class OurCoffee extends Component {
     constructor(props) {
       super(props);
@@ -34,16 +35,16 @@ class OurCoffee extends Component {
 
   filteredProducts = (products, filter) => {
     switch (filter) {
-      case 'Brazil':
-        return products.filter(product => product.country === 'Brazil');
-      case 'Kenya':
-        return products.filter(product => product.country === 'Kenya');
-      case 'Columbia':
-        return products.filter(product => product.country === 'Columbia');
-      case 'Italy':
-        return products.filter(product => product.country === 'Italy');
-        case 'Belgium':
-        return products.filter(product => product.country === 'Belgium');
+      case PRODUCTS_COUNTRY.BRASIL:
+        return products.filter(product => product.country === PRODUCTS_COUNTRY.BRASIL);
+      case PRODUCTS_COUNTRY.KENYA:
+        return products.filter(product => product.country === PRODUCTS_COUNTRY.KENYA);
+      case PRODUCTS_COUNTRY.COLUMBIA:
+        return products.filter(product => product.country === PRODUCTS_COUNTRY.COLUMBIA);
+      case PRODUCTS_COUNTRY.ITALY:
+        return products.filter(product => product.country === PRODUCTS_COUNTRY.ITALY);
+        case PRODUCTS_COUNTRY.BELGIUM:
+        return products.filter(product => product.country === PRODUCTS_COUNTRY.BELGIUM);
       default:
         return products
     }
@@ -56,25 +57,23 @@ class OurCoffee extends Component {
   render() {
     const {data, search, filter} = this.state;
     const visibleProducts = this.filteredProducts(this.searchCoffeeBeans(data, search), filter)
-    return (
-      <>
-          <Header 
-            background="our" 
-            description="Our coffee" 
-          />
-          <main>
-            <AboutOurBeans 
-              title="About our beans"  
-              section="about-our-beans"
+      return (
+        <>
+            <Header 
+              background={PAGES_DESCRIPTION.OUR} 
+              description="Our coffee" 
             />
-            <ControlPanel 
-              onUpdateSearch={this.onUpdateSearch}
-              filter={filter}
-              onFilterSelect={this.onFilterSelect} />
-            <CatalogProducts products={visibleProducts} />
-          </main>
-      </>
-    )
+            <main>
+              <AboutOurBeans section={PAGES_DESCRIPTION.OUR} />
+              <ControlPanel 
+                onUpdateSearch={this.onUpdateSearch}
+                filter={filter}
+                onFilterSelect={this.onFilterSelect} 
+              />
+              <CatalogProducts products={visibleProducts} />
+            </main>
+        </>
+      )
   }
 }
 

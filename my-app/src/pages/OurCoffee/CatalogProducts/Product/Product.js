@@ -6,7 +6,11 @@ export const Product = ({name, img, price, country}) => {
             <div className="catalog-product">
                 <div 
                     className="catalog-product_image"
-                    style={{backgroundImage: `url(${img})`}}>
+                    style={
+                        {
+                            backgroundImage: `url(${img})`
+                        }
+                    }>
                 </div>
                 <div className="catalog-product_description">
                     <p className="catalog-product_name">{name}</p>

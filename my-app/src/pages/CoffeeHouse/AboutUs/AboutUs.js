@@ -1,6 +1,6 @@
 import { Divider } from "../../../сommonComponents/Divider/Divider";
 import { Description } from "./Description/Description";
-import { Title } from "../../../сommonComponents/Title/Title";
+import { PAGES_DESCRIPTION } from "../../../constants/constants";
 
 import './AboutUs.css';
 
@@ -9,10 +9,10 @@ export const AboutUs = () => {
     <section className="about-us">
       <div className="about-us_wrapper">
         <div className="about-us_content">
-          <Title title="About Us" />
+          <h2>About Us</h2>
           <Divider />
         </div>
-        <Description name="about-us"/>
+        <Description description={PAGES_DESCRIPTION.MAIN} />
       </div>
     </section>
   )
